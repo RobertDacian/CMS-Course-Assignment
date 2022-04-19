@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="Group_3259" data-name="Group 3259" transform="translate(-2664.5 9493.5)">
+    <g id="Email_Icon" transform="translate(2664.5 -9493.5)">
+      <g id="Oval" fill="none" stroke="rgba(51,51,51,0.29)" stroke-miterlimit="10" stroke-width="1">
+        <circle cx="75" cy="75" r="75" stroke="none"/>
+        <circle cx="75" cy="75" r="74.5" fill="none"/>
+      </g>
+      <path id="Shape" d="M28.135,52.105l10.185,9.068L28.135,75.026Zm2.723-5.962L55.248,20.4,22.555,43,0,37.512,75.026,0,56.269,68.772Z" transform="translate(37.487 37.487)" fill="#3d4954"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg id="Group_3224" data-name="Group 3224" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <path id="Base" d="M75,0A75,75,0,1,1,0,75,75,75,0,0,1,75,0Z" fill="#f0f3f4"/>
+  <g id="Icon" transform="translate(34.011 57.376)">
+    <path id="Icon-2" data-name="Icon" d="M0,3.46V0H40.771V30.876H26.383m-21.824,0H0V22.69" transform="translate(9.228)" fill="none" stroke="#7d8fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-3" data-name="Icon" d="M5.366,10.758A5.379,5.379,0,1,0,0,5.379,5.372,5.372,0,0,0,5.366,10.758Z" transform="translate(21.203 24.483)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-4" data-name="Icon" d="M5.366,10.758A5.379,5.379,0,1,0,0,5.379,5.372,5.372,0,0,0,5.366,10.758Z" transform="translate(61.216 24.483)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-5" data-name="Icon" d="M15.747,25.558h2.69a1.791,1.791,0,0,0,1.789-1.793V13L11.355.525A1.786,1.786,0,0,0,10.091,0H0" transform="translate(61.753 5.318)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-6" data-name="Icon" d="M0,.5H0Z" transform="translate(8.943 9.408)" fill="none" stroke="#7d8fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-7" data-name="Icon" d="M0,0V11.762H19.372" transform="translate(61.216 5.318)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-8" data-name="Icon" d="M0,.5H29" transform="translate(0 16.58)" fill="none" stroke="#7d8fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

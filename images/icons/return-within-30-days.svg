@@ -1,0 +1,14 @@
+<svg id="Group_3232" data-name="Group 3232" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <rect id="Base" width="150" height="150" rx="75" fill="#f0f3f4"/>
+  <g id="Icon" transform="translate(21.942 35.7)">
+    <path id="Icon-2" data-name="Icon" d="M47.963,0C23.7,0,3.6,13.442,0,31" transform="translate(101.967) rotate(90)" fill="none" stroke="#7d8fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-3" data-name="Icon" d="M0,9.366,6.194,4.1,0,0" transform="translate(106.062 32.543) rotate(90)" fill="none" stroke="#7d8fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-4" data-name="Icon" d="M47.963,0C23.7,0,3.6,13.442,0,31" transform="translate(4.095 78.546) rotate(-90)" fill="none" stroke="#7d8fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-5" data-name="Icon" d="M0,9.366,6.194,4.1,0,0" transform="translate(0 46.003) rotate(-90)" fill="none" stroke="#7d8fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-6" data-name="Icon" d="M0,11.407V32.9l20.839,10.8L42.267,32.9V11.407L20.839,0Z" transform="translate(32.968 17.02)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-7" data-name="Icon" d="M0,41.256V13.34L21.429,0" transform="translate(56.307 22.59)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-8" data-name="Icon" d="M20.839,13.34,0,0" transform="translate(30.241 27.437)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-9" data-name="Icon" d="M0,13.7,20.347,0" transform="translate(43.165 22.387)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Icon-10" data-name="Icon" d="M0,0,7.47,4.425" transform="translate(37.207 38.802)" fill="none" stroke="#3d4954" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
