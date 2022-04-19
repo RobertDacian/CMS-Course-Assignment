@@ -1,0 +1,4 @@
+<svg id="Number" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <circle id="Container" cx="75" cy="75" r="75" fill="#3d4954"/>
+  <text id="_1" data-name="1" transform="translate(61 104)" fill="#fff" font-size="73" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">1</tspan></text>
+</svg>
