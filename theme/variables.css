@@ -1,0 +1,68 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ############## GLOBAL VARIABLES STYLES ##############  */
+/* ###################################################### */
+/* ###################################################### */
+
+html {
+  /* <<<-------------  Colors and Shadows ------------>>> */
+  /* backgrounds */
+  --site-color: #ffffff;
+  --card-color: #f0f3f4;
+  --primary-color: #3d4954;
+  --secondary-color: #7d8fb3;
+
+  /* font colors */
+  --white-text: #fafafa;
+  --active-color: #a8a8a8;
+  --span-color: #7d8fb3;
+  --light-bg-color: #f5faff;
+  /* shadows */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* <<<---------  Font, Size, Weight, Height --------->>> */
+  /* font family */
+  --text-font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  --headings-font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+
+  /* font size desktop */
+  --regular-font-size: 1rem;
+  --small-font-size: 0.8rem;
+
+  /* font weight */
+  --font-weight-light: 400;
+  --font-weight-regular: 500;
+  --font-weight-semibold: 700;
+  --font-weight-bold: 900;
+
+  /* <<<------ Margin, Padding, Borders, Transitions, Width ------>>> */
+  /* desktop padding */
+  --desktop-section-padding: 6em 0;
+  --primary-cta-padding: 1.25em 2.5em;
+  --secondary-cta--padding: 0.6em 0.7em;
+  --no-padding: 0;
+  --container-padding: 0 1.5em;
+  --card-padding: 2em 0;
+
+  /* mobile padding */
+  --mobile-section-padding: 3em 0;
+  /* --container-padding: 0 1.5em; */
+  /* --card-padding: 1.5em 0; */
+
+  /* margin */
+  --no-margin: 0;
+  /* --desktop-cta--margin: 0; */
+  --primary-cta--margin: 1.5em 0 0;
+  --secondary-cta--margin: 1.2em 0 0;
+
+  /* border radius */
+  /* --cta-border-radius: 2em; */
+
+  /* transitions */
+  --transition: all 0.3s linear;
+
+  /* width */
+  --primary-cta-width: 12em;
+  --secondary-cta-width: 7.5em;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tailored with love and passion for nature, Rainy Days jackets - best adventurer’s choice."
+    />
+    <title>Rainy Days | Checkout Info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="https://kit.fontawesome.com/4296b0387b.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://rainy-days-ca-project.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2863573, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="mainNavigation">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./images/logo/rainy-days-color-logo.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links f-center__center">
+            <div class="primary-nav f-center__center">
+              <div class="prim-link">
+                <a href="index.html">home</a>
+              </div>
+              <div class="prim-link">
+                <a href="about.html">about</a>
+              </div>
+              <div class="prim-link">
+                <a href="shop.html">shop</a>
+              </div>
+              <div class="prim-link">
+                <a href="contact.html">contact</a>
+              </div>
+            </div>
+            <div class="secondary-nav f-center__center">
+              <!-- <div class="sec-link">
+                <a href="#"><img src="images/icons/search.svg" alt="Website search icon" /></a>
+              </div>
+              <div class="sec-link">
+                <a href="#"
+                  ><img src="images/icons/nav-favorite.svg" alt="Add to favorite icon"
+                /></a>
+              </div> -->
+              <div class="sec-link">
+                <a href="#"
+                  ><img src="images/icons/log-in.svg" alt="Log into your account icon"
+                /></a>
+              </div>
+              <div class="sec-link">
+                <a href="#"><img src="images/icons/bag.svg" alt="Add to bag icon" /></a>
+              </div>
+            </div>
+          </div>
+          <!-- social media -->
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="checkout-hero">
+        <div class="container">
+          <div class="checkout-hero">
+            <h1>Checkout</h1>
+          </div>
+          <div class="checkout-grid">
+            <div class="checkout-info">
+              <div class="checkout-content-top">
+                <div class="checkout-ship-to">
+                  <img src="../images/icons/Number-1-full.svg" alt="Ship to icons" />
+                  <h3>SHIP TO</h3>
+                </div>
+                <div class="ship-to-dropdown">
+                  <p class="small-paragraph"></p>
+                  <div class="dropdown-selector">
+                    <div class="dropdown-field">
+                      <label for="">Shipping to:</label>
+                      <select id="country" name="country" autocomplete="country" required>
+                        <option selected value="SPACER"></option>
+                        <option value="AF">USA</option>
+                        <option value="AX">Norway</option>
+                        <option value="AL">Romania</option>
+                        <option value="DZ">Brazil</option>
+                        <option value="AS">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form class="checkout-form" action="#" method="GET">
+                <div class="form-wrapper">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      autocomplete="name"
+                      maxlength="100"
+                      pattern="[\p{L} \-\.]+"
+                      required
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="short-field">
+                    <div class="form-field short">
+                      <label for="tel">Phone number</label>
+                      <input
+                        id="tel"
+                        name="tel"
+                        autocomplete="tel"
+                        type="tel"
+                        maxlength="30"
+                        pattern="[\d \-\+]+"
+                        enterkeyhint="done"
+                        required
+                      />
+                    </div>
+                    <div class="form-field short">
+                      <label for="postal-code">ZIP or postal code</label>
+                      <input
+                        id="postal-code"
+                        name="postal-code"
+                        autocomplete="postal-code"
+                        maxlength="20"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="address">Address</label>
+                    <textarea
+                      id="address"
+                      name="address"
+                      autocomplete="address"
+                      maxlength="300"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="dropdown-form-fields">
+                    <div class="dropdown-field">
+                      <label for="country">City</label>
+                      <select id="city" name="city" autocomplete="city" required>
+                        <option selected value="SPACER"></option>
+                        <option value="Stavanger">Stavanger</option>
+                        <option value="New York">New York</option>
+                        <option value="Bucharest">Bucharest</option>
+                        <option value="Natal">Natal</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="dropdown-field">
+                      <label for="country">Country</label>
+                      <select id="country" name="country" autocomplete="country" required>
+                        <option selected value="SPACER"></option>
+                        <option value="USA">USA</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="checkout-content-top">
+                <div class="checkout-ship-to">
+                  <img src="../images/icons/Number-2-light.svg" alt="Ship to icons" />
+                  <h3>PAY WITH</h3>
+                </div>
+              </div>
+              <div class="pay-with-content">
+                <form class="checkout-form" action="/checkout/checkout-complete.html" method="GET">
+                  <div class="form-wrapper">
+                    <div class="form-field">
+                      <label for="card-number">Card number</label>
+                      <input
+                        id="card-number"
+                        name="card-number"
+                        autocomplete="card-number"
+                        inputmode="numeric"
+                        pattern="[\d ]{10,30}"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-field">
+                      <label for="card-mame">Card holder name</label>
+                      <input
+                        id="card-mame"
+                        name="card-name"
+                        autocomplete="card-name"
+                        pattern="[\p{L} \-\.]+"
+                        required
+                      />
+                    </div>
+
+                    <div class="dropdown-form-fields">
+                      <div class="dropdown-field">
+                        <label for="expiry-date">Expiry date</label>
+                        <input
+                          id="expiry-date"
+                          name="expiry-date"
+                          autocomplete="expiry-date"
+                          placeholder="MM/YY"
+                          maxlength="5"
+                          required
+                        />
+                      </div>
+                      <div class="dropdown-field">
+                        <label for="security-code">Security code</label>
+                        <input
+                          id="security-code"
+                          name="security-code"
+                          autocomplete="security-code"
+                          inputmode="numeric"
+                          maxlength="3"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-cta">
+                    <div class="form-submit-btn">
+                      <a href="./checkout-complete.html" class="btn">Pay Now</a>
+                    </div>
+                    <div class="product-hero-link">
+                      <a href="/shop.html">Continue shopping</a>
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="checkout-item">
+              <h3>YOUR ITEMS</h3>
+              <div class="checkout-item-top">
+                <div class="checkout-item-img">
+                  <img
+                    src="../images/product-images/north-peak-jacket.png"
+                    alt="Image with the product you bought"
+                  />
+                </div>
+                <div class="checkout-item-top--info">
+                  <div class="item-info">
+                    <h5 class="h5-light">North Peak</h5>
+                    <p class="small-paragraph">1 item</p>
+                  </div>
+                  <div class="checkout-quantity-selector">
+                    <div class="quantity">
+                      <img src="../images/icons/Icon - Minus.svg" alt="Decrease quantity" />
+                      <p>1</p>
+                      <img src="../images/icons/Icon - Plus.svg" alt="Add quantity" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-item-detail">
+                <p class="small-paragraph">Subtotal</p>
+                <p class="small-paragraph">USD 140.00</p>
+              </div>
+              <div class="checkout-item-detail">
+                <p class="small-paragraph">Shipping</p>
+                <p class="small-paragraph">Free</p>
+              </div>
+              <div class="checkout-item-total">
+                <h5 class="h4-light">Total</h5>
+                <h5 class="h4-light">USD 140.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ################ FLEX GLOBAL STYLES #################  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* <<<-------------  Flex Classes ------------>>> */
+/* .f-center__space-b */
+/* .f-center__center */
+/* .f-dir-col__center */
+/* .f-center */
+/* .flex-wrap */
+/* .f-wrap__center */
+/* .f-wrap-center__center */
+/* .f-wrap-col__center  */
+/* .f-start-col */
+/* .f-dir-col__center-center */
+/* .f-start-row */
+
+/* flex center */
+.f-center__space-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-center__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-center {
+  display: flex;
+  align-items: center;
+}
+
+.f-dir-col__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.f-dir-col__center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* flex wrap */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.f-no-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.f-wrap__center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.f-wrap-col__center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.f-wrap-center__center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* flex start */
+.f-start-col {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.f-start-row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+/* ###################################################### */
+/* ###################################################### */
+/* ########## FLEX MEDIA QUERY GLOBAL STYLES ###########  */
+/* ###################################################### */
+/* ###################################################### */
+/* @media screen and (min-width: 800px) {
+  .f-dir-col__center {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .f-center__space-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+} */

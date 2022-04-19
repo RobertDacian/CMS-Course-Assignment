@@ -1,0 +1,72 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ####  MAIN CHECKOUT COMPLETE PAGE LAYOUT STYLES #####  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* #### MAIN CHECKOUT COMPLETE PAGE DESKTOP STYLES #####  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------ MAIN CHECKOUT COMPLETE PAGE FORM SECTION (desktop) --->>> */
+/* <<<------------------------------------------------------------->>> */
+.centered-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.checkout-complete-hero {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.checkout-complete-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2em; */
+  justify-content: center;
+}
+
+.checkout-complete-content img {
+  width: 5em;
+  margin-bottom: 2em;
+}
+
+.checkout-complete-content p {
+  text-align: center;
+}
+
+/* ######################################################################### */
+/* ## MAIN CHECKOUT COMPLETE PAGE MEDIA QUERY STYLES (max-width: 800px) ###  */
+/* ###################################################### ###################*/
+
+/* <<<------------------------------------------------------------->>> */
+/* <<- MAIN CHECKOUT COMPLETE PAGE HERO SECTION (max-width: 800px) ->> */
+/* <<<------------------------------------------------------------->>> */
+
+/* ######################################################################### */
+/* ## MAIN CHECKOUT COMPLETE PAGE MEDIA QUERY STYLES (max-width: 486px) ###  */
+/* ###################################################### ###################*/
+
+/* <<<------------------------------------------------------------->>> */
+/* <<- MAIN CHECKOUT COMPLETE PAGE HERO SECTION (max-width: 486px) ->> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .centered-wrapper {
+    height: 100vh;
+  }
+
+  .checkout-complete-hero {
+    width: 100%;
+  }
+
+  .checkout-complete-content h1 {
+    text-align: center;
+  }
+}

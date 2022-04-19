@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165" height="165" viewBox="0 0 165 165">
+  <defs>
+    <filter id="Base" x="0" y="0" width="165" height="165" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#363d4d" flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3253" data-name="Group 3253" transform="translate(-15.5 12687.5)">
+    <g transform="matrix(1, 0, 0, 1, 15.5, -12687.5)" filter="url(#Base)">
+      <rect id="Base-2" data-name="Base" width="150" height="150" rx="75" transform="translate(7.5 5.5)" fill="#f0f3f4"/>
+    </g>
+    <g id="Group_3243" data-name="Group 3243" transform="translate(55.637 -12649.363)">
+      <g id="icon-fav" transform="translate(0.363 0.363)">
+        <rect id="Container-icon" width="84" height="84" transform="translate(0 0)" fill="none"/>
+        <path id="Fav" d="M52.474,6.3a19.5,19.5,0,0,0-15.32,6.9A19.5,19.5,0,0,0,21.831,6.3C8.772,6.3,0,18.04,0,29.006,0,44.974,31.6,66.37,35.2,68.756a3.558,3.558,0,0,0,3.913,0c3.6-2.386,35.2-23.783,35.2-39.75C74.307,18.04,65.532,6.3,52.473,6.3Z" transform="translate(5.308 4.409)" fill="none" stroke="#151515" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

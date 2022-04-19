@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165.047" height="165.047" viewBox="0 0 165.047 165.047">
+  <defs>
+    <filter id="BG" x="0" y="0" width="165.047" height="165.047" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3242" data-name="Group 3242" transform="translate(-69 12679.5)">
+    <g id="Top" transform="translate(76.5 -12674)">
+      <g transform="matrix(1, 0, 0, 1, -7.5, -5.5)" filter="url(#BG)">
+        <path id="BG-2" data-name="BG" d="M75.024,0A75.024,75.024,0,1,1,0,75.024,75.024,75.024,0,0,1,75.024,0Z" transform="translate(7.5 5.5)" fill="#fff"/>
+      </g>
+      <g id="Icon" transform="translate(46.89 46.889)">
+        <path id="Icon-2" data-name="Icon" d="M31.839,52.657V12.322L49.922,29.944a3.8,3.8,0,0,0,5.262,0,3.532,3.532,0,0,0,0-5.091L30.765,1.056a3.759,3.759,0,0,0-5.225,0L1.084,24.816a3.532,3.532,0,0,0,0,5.091,3.759,3.759,0,0,0,5.225,0l18.12-17.585V52.657a3.707,3.707,0,0,0,7.411,0Z" transform="translate(0 0)" fill="#7d8fb3"/>
+      </g>
+    </g>
+  </g>
+</svg>

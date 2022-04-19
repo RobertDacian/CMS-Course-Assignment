@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <filter id="Base" x="0" y="0" width="240" height="240" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#363d4d" flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3257" data-name="Group 3257" transform="translate(-437 12759)">
+    <g id="M" transform="translate(482 -12724)">
+      <g transform="matrix(1, 0, 0, 1, -45, -35)" filter="url(#Base)">
+        <rect id="Base-2" data-name="Base" width="150" height="150" rx="75" transform="translate(45 35)" fill="#f2f2f2"/>
+      </g>
+      <text id="M-2" data-name="M" transform="translate(47 93)" fill="#7d8fb3" font-size="58" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">M</tspan></text>
+    </g>
+  </g>
+</svg>

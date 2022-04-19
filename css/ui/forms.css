@@ -1,0 +1,110 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ############### WEBSITE FORMS STYLES ################  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ############# FORMS DESKTOP STYLES ###############  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<----------- HOME PAGE SUBSCRIPTION SECTION (desktop) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+.newsletter-subscription {
+  padding-top: 0%;
+}
+
+.form-content {
+  width: 100%;
+}
+
+.form-field--email {
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+input {
+  position: relative;
+  height: 3.2em;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-radius: 2em; */
+}
+
+.form-input {
+  position: relative;
+  width: 50%;
+  margin: 0 1em;
+}
+
+.form-info {
+  text-align: center;
+}
+
+/* .fa,
+.fa-envelope {
+  position: absolute;
+  left: 1em;
+  top: 0.6em;
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* ::placeholder {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  left: 4em;
+  top: 0.9em;
+} */
+
+/* ###################################################### */
+/* ############# FORMS MEDIA QUERY STYLES ##############  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------ HOME PAGE SUBSCRIPTION SECTION (max-width: 800px) ---->>> */
+/* <<<------------------------------------------------------------->>> */
+
+@media (max-width: 800px) {
+  .form-info {
+    width: 100%;
+  }
+
+  .form-field--email {
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .subscribe-btn {
+    width: 50%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------ HOME PAGE SUBSCRIPTION SECTION (max-width: 486px) ---->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .form-info {
+    width: 100%;
+  }
+
+  .form-field--email {
+    align-content: space-around;
+  }
+
+  .form-input {
+    width: 100%;
+    margin: 0 1em;
+  }
+
+  .form-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,116 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ################# NAVIGATION STYLES #################  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* <<<------------------ Desktop Styles ---------------->>> */
+
+#mainNavigation {
+  background: var(--site-color);
+  box-shadow: var(--light-shadow);
+}
+
+.nav-center {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.logo {
+  width: 120px;
+}
+
+.links {
+  height: auto;
+  width: 100%;
+}
+
+.links a {
+  font-family: var(--text-font-family);
+  color: var(--primary-color);
+  font-size: var(--regular-font-size);
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.links .active {
+  color: var(--active-color);
+}
+
+.sec-link {
+  width: 20px;
+}
+
+.links a:hover {
+  color: var(--active-color);
+}
+
+.primary-nav {
+  width: 100%;
+  gap: 2em;
+}
+
+.secondary-nav {
+  width: auto;
+  gap: 2em;
+}
+
+/* <<<------------------ Media Queries Styles ---------------->>> */
+
+/* Max Width 800px Styles */
+@media screen and (max-width: 800px) {
+  .nav-center {
+    display: block;
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: var(--active-color);
+    transform: rotate(90deg);
+  }
+  .links {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2em;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .show-links {
+    height: 30em;
+  }
+  .links a {
+    font-size: 1.2rem;
+  }
+  .links a:hover {
+    color: var(--active-color);
+  }
+  .primary-nav {
+    flex-direction: column;
+  }
+  .secondary-nav {
+    justify-content: center;
+    padding-bottom: 2em;
+  }
+}

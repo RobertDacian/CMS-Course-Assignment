@@ -1,0 +1,490 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ############ MAIN HOME PAGE LAYOUT STYLES ###########  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ############# HOMEPAGE DESKTOP STYLES ###############  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------------- HOME PAGE HERO SECTION (desktop) ------------->>> */
+/* <<<------------------------------------------------------------->>> */
+.home-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 100px);
+  align-items: center;
+}
+
+.hero-content {
+  grid-column: 1/ 3;
+  grid-row: 1 /-1;
+}
+
+.hero-img {
+  background: url(/images/old-images/hero-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  grid-column: 3 / 6;
+  grid-row: 1 / 9;
+  height: 600px;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------ HOME PAGE COLLECTION SECTION (desktop) --------->>> */
+/* <<<------------------------------------------------------------->>> */
+.collection {
+  background: var(--light-bg-color);
+}
+
+.cards {
+  gap: 1em;
+  padding: var(--card-padding);
+}
+
+.cards > * {
+  width: 100%;
+}
+
+.icon-card-content {
+  flex: 1 1 200px;
+  padding: 2em;
+  background-color: var(--site-color);
+  box-shadow: var(--light-shadow);
+}
+
+.icon-card-content img {
+  width: 40px;
+}
+
+.collection-card {
+  gap: 1em;
+  padding: var(--card-padding);
+}
+
+.collection-card > * {
+  width: 100%;
+}
+
+.card-content {
+  flex: 1 1 300px;
+  padding: 2em;
+  background-color: var(--site-color);
+  box-shadow: var(--light-shadow);
+}
+
+.card-content--left,
+.card-content--right {
+  padding-right: 1em;
+}
+
+.card-content img {
+  background: var(--site-color);
+  width: 160px;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------ HOME PAGE LOGO GROUP SECTION (desktop) --------->>> */
+/* <<<------------------------------------------------------------->>> */
+.logo-group h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.logo-img {
+  flex: 1 1 20%;
+}
+
+.logo-group img {
+  width: 100px;
+  margin: 2em;
+  padding: 0;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<----------- HOME PAGE NEW ARRIVALS SECTION (desktop) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+
+.section-gap {
+  display: flex;
+  gap: 6em;
+}
+
+.new-arrivals {
+  background: var(--light-bg-color);
+}
+
+.col-left {
+  margin-bottom: 6em;
+}
+
+.col-left img {
+  width: 50%;
+}
+
+.small-heading {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-semibold);
+}
+
+.left-col--content p {
+  width: 90%;
+}
+
+.col-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left;
+  flex-wrap: nowrap;
+}
+
+.col-right img {
+  width: 50%;
+}
+
+.right-col--content p {
+  width: 90%;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------- HOME PAGE REVIEWS SECTION (desktop) ----------->>> */
+/* <<<------------------------------------------------------------->>> */
+.small-paragraph.light {
+  color: var(--secondary-color);
+}
+
+.reviews h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.reviews-card {
+  gap: 1em;
+}
+
+.reviews-card > * {
+  width: 100%;
+}
+
+.reviews-card--content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 2em;
+  background-color: var(--site-color);
+  box-shadow: var(--light-shadow);
+}
+
+.stars {
+  margin: 1em 0;
+}
+
+.stars p {
+  margin: 0;
+  padding-left: 2em;
+}
+.reviews-star img {
+  width: 1em;
+}
+
+.reviews .primary-cta {
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.bottom-card--reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-info .small-paragraph {
+  margin: 0;
+}
+.avatar-img img {
+  width: 30%;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------- HOME PAGE BANNER SECTION (desktop) ------------>>> */
+/* <<<------------------------------------------------------------->>> */
+.banner-section {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5) url(/images/product-images/mountain-peak.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  text-align: center;
+}
+.banner-section--content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.banner-section--content .primary-cta {
+  margin: 2em auto;
+  background-color: var(--site-color);
+  color: var(--primary-color);
+}
+
+.banner-section--content h2,
+.banner-section--content p {
+  color: var(--site-color);
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------ HOME PAGE INSTAGRAM SECTION (desktop) ---------->>> */
+/* <<<------------------------------------------------------------->>> */
+.instagram {
+  padding-bottom: 2em;
+}
+
+.instagram h3 {
+  text-align: center;
+}
+
+.instagram-feed {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.instagram-img img {
+  width: 100%;
+}
+
+/* ###################################################### */
+/* ###################################################### */
+/* #### MAIN HOME PAGE MEDIA QUERIES LAYOUT STYLES #####  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ################################################################### */
+/* ####### HOMEPAGE MEDIA QUERIES STYLES (max-width: 800px) #########  */
+/* ################################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<---------- HOME PAGE HERO SECTION (max-width: 800px) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .hero-content {
+    grid-column: 1 / 11;
+    grid-row: 9 / 12;
+    width: 100%;
+  }
+
+  .hero-img {
+    grid-column: 1/ 10;
+    height: 540px;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------- HOME PAGE COLLECTION SECTION (max-width: 800px) ----->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .collection-card > * {
+    flex-direction: column-reverse;
+  }
+
+  .card-content--left,
+  .card-content--right {
+    padding: 1em 0;
+    width: 100%;
+  }
+
+  .card-content img {
+    width: 100%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------ HOME PAGE NEW ARRIVALS SECTION (max-width: 800px) ---->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .section-gap {
+    gap: 3em;
+  }
+  .col-left {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
+  .left-col--content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .left-col--content,
+  .right-col--content p {
+    width: 70%;
+  }
+
+  .col-right {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 3em;
+  }
+
+  .right-col--content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .col-right img {
+    width: 80%;
+  }
+
+  .col-left img {
+    width: 80%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------- HOME PAGE REVIEWS SECTION (max-width: 800px) ------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .reviews h2 {
+    text-align: left;
+    padding: 0 0 0 0.4em;
+  }
+
+  .reviews-card--content.last {
+    display: none;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------- HOME PAGE BANNER SECTION (max-width: 800px) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .banner-section--content {
+    width: 80%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------- HOME PAGE INSTAGRAM SECTION (max-width: 800px) ------>>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .instagram {
+    padding-bottom: 0;
+  }
+
+  .instagram-feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .instagram-feed .hidden-tablet {
+    display: none;
+  }
+  .instagram-img img {
+    width: 100%;
+  }
+}
+
+/* ################################################################### */
+/* ####### HOMEPAGE MEDIA QUERIES STYLES (max-width: 486px) #########  */
+/* ################################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<---------- HOME PAGE HERO SECTION (max-width: 486px) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .hero-content {
+    grid-row: 6 / 10;
+  }
+
+  .hero-img {
+    grid-row: 1 / 6;
+    height: 380px;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------- HOME PAGE COLLECTION SECTION (max-width: 486px) ----->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .collection-card {
+    padding: var(--no-padding);
+  }
+  .card-content--left,
+  .card-content--right {
+    padding-right: var(--no-padding);
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------ HOME PAGE NEW ARRIVALS SECTION (max-width: 486px) ---->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  /* .section-gap {
+    gap: 1em;
+  } */
+
+  .col-left {
+    margin-bottom: 2em;
+  }
+
+  .col-left img {
+    width: 100%;
+  }
+
+  .col-right img {
+    width: 100%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------- HOME PAGE REVIEWS SECTION (max-width: 486px) ------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .reviews-card {
+    flex-direction: column;
+  }
+
+  .reviews-card--content {
+    flex: 1;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------- HOME PAGE BANNER SECTION (max-width: 486px) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .banner-section--content {
+    width: 100%;
+  }
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------- HOME PAGE INSTAGRAM SECTION (max-width: 486px) ------>>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .instagram-feed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
+  }
+
+  .instagram-feed .hidden-mobile {
+    display: none;
+  }
+}

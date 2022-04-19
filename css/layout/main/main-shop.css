@@ -1,0 +1,208 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ########### MAIN SHOP PAGE LAYOUT STYLES ############  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ############# SHOP PAGE DESKTOP STYLES ##############  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<---------- SHOP PAGE HERO SECTION (desktop) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+section.hero-banner {
+  text-align: center;
+  height: 30vh;
+  margin-top: 3em;
+}
+
+.bread-crumbs {
+  gap: 1em;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------------- SHOP PAGE PRODUCTS SECTION (desktop) ---------->>> */
+/* <<<------------------------------------------------------------->>> */
+
+.products {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 2em;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 1em 0 1em;
+  position: relative;
+}
+
+.msg-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  width: 72%;
+}
+
+.error-msg {
+  text-align: center;
+  background: #e3b4b4;
+  color: var(--primary-color);
+  border: 1px solid rgb(107, 6, 6);
+  padding: 1em;
+  /* width: 100%; */
+}
+
+.product {
+  padding: 1em;
+  box-shadow: var(--light-shadow);
+}
+
+.product img {
+  height: 150px;
+  width: 150px;
+}
+
+.product-footer {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+
+.filters-container h5 {
+  font-weight: var(--font-weight-regular);
+  margin: 1.5em 0 0.5em;
+  font-size: var(--small-font-size);
+}
+
+.input-form {
+  padding-bottom: 1em;
+}
+
+.search-input {
+  padding: 0.5em;
+  background: var(--white-text);
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.category-btn {
+  display: block;
+  /* margin: 0.25em 0; */
+  padding: 0.25em;
+  text-transform: capitalize;
+  background: transparent;
+  border-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: var(--regular-font-size);
+  font-family: var(--text-font-family);
+}
+
+.category-btn:hover {
+  color: var(--active-color);
+}
+
+.product-name {
+  margin-bottom: 0.25rem;
+}
+
+/* ###################################################### */
+/* ###################################################### */
+/* #### MAIN SHOP PAGE MEDIA QUERIES LAYOUT STYLES #####  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ################################################################### */
+/* ####### SHOP PAGE MEDIA QUERIES STYLES (max-width: 800px) ########  */
+/* ################################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------- SHOP PAGE PRODUCTS SECTION (max-width: 800px) ------>>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .msg-container {
+    top: 80%;
+    width: 82%;
+  }
+
+  .error-msg {
+    padding: 1em;
+  }
+
+  .input-form {
+    width: 50%;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+}
+
+/* ################################################################### */
+/* ####### SHOP PAGE MEDIA QUERIES STYLES ((max-width: 486px) #######  */
+/* ################################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<---------- SHOP PAGE HERO SECTION (max-width: 486px) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 486px) {
+  .products-container {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* gap: 1rem; */
+  }
+
+  .msg-container {
+    top: 50%;
+    width: 100%;
+  }
+
+  .error-msg {
+    padding: 0.7em;
+  }
+
+  .input-form {
+    width: 100%;
+  }
+  .categories {
+    overflow: hidden;
+    /* gap: 0.2em; */
+  }
+}

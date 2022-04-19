@@ -1,0 +1,217 @@
+/* ###################################################### */
+/* ###################################################### */
+/* ######### PRODUCT DETAIL PAGE LAYOUT STYLES #########  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ###################################################### */
+/* ######## PRODUCT DETAIL PAGE DESKTOP STYLES #########  */
+/* ###################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<--------- PRODUCT DETAIL PAGE HERO SECTION (desktop) -------->>> */
+/* <<<------------------------------------------------------------->>> */
+.product-hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2em;
+  align-items: center;
+}
+
+.images-wrapper {
+  display: flex;
+  width: 100%;
+  width: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.thumbnail-image {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.img-thumbnail {
+  width: 15%;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product-info__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  text-align: center;
+  font-size: var(--regular-font-size);
+  background: var(--primary-color);
+  color: var(--site-color);
+  margin: var(--secondary-cta--margin);
+  padding: var(--primary-cta-padding);
+}
+
+.icon-group {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  align-content: space-between;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.icon-group img {
+  width: 3.5em;
+}
+.product-hero--icons {
+  display: flex;
+
+  justify-content: space-evenly;
+  margin: 4em auto;
+}
+
+.product-hero-link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.product-hero-link a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<------- PRODUCT DETAIL PAGE REVIEWS SECTION (desktop) ------->>> */
+/* <<<------------------------------------------------------------->>> */
+.product-review {
+  padding-top: 0;
+}
+.product-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 4em;
+}
+
+.product-review-brand {
+  display: flex;
+  flex-direction: column;
+}
+.product-review-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.product-review-brand img {
+  width: 6em;
+  margin-bottom: 1em;
+}
+
+.rating-table {
+  width: 20em;
+}
+
+.reviews-star {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.reviews-star p {
+  padding-left: 2em;
+  font-weight: bold;
+  font-size: large;
+  margin: 0;
+}
+.product-review-comments {
+  display: flex;
+  flex-direction: column;
+}
+.review-comment--name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review-comment--comment {
+  border-bottom: 1px solid #d0d0d0;
+  margin: 1em 0 2em 0;
+}
+.review-comment--link {
+  display: flex;
+  align-items: center;
+}
+
+.review-comment--link a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.review-comment--link .fa-external-link-alt {
+  margin-left: 1em;
+  font-size: 0.8em;
+}
+
+/* ###################################################### */
+/* ###################################################### */
+/* ##### PRODUCT DETAIL PAGE MEDIA QUERIES STYLES ######  */
+/* ###################################################### */
+/* ###################################################### */
+
+/* ################################################################### */
+/* ## PRODUCT DETAIL PAGE MEDIA QUERIES STYLES (max-width: 800px) ###  */
+/* ################################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-------- SHOP PAGE PRODUCTS SECTION (max-width: 800px) ------>>> */
+/* <<<------------------------------------------------------------->>> */
+@media (max-width: 800px) {
+  .product-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-info {
+    margin-top: 2em;
+  }
+
+  .product-review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .icon-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .rating-table {
+    width: 17em;
+  }
+}
+
+/* ################################################################### */
+/* ## PRODUCT DETAIL PAGE MEDIA QUERIES STYLES (max-width: 486px) ###  */
+/* ################################################################### */
+
+/* <<<------------------------------------------------------------->>> */
+/* <<<-- PRODUCT DETAIL PAGE PRODUCTS SECTION (max-width: 486px) -->>> */
+/* <<<------------------------------------------------------------->>> */
+
+@media (max-width: 486px) {
+}
