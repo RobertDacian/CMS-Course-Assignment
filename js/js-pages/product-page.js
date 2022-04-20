@@ -1,9 +1,5 @@
 import { message } from "../components/messages.js";
 
-// importing the array from products products.js
-
-// import { products } from "./products.js";
-
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
@@ -65,19 +61,7 @@ getJackets(url);
 ////////// DISPLAYING THE FILTER BUTTONS FORM ( CATEGORY BUTTONS ) ///////////
 //////////////////////////////////////////////////////////////////////////////
 
-// const categoriesDOM = document.querySelector(".categories");
-
-// This is the displayButtons function when we iterate over the original products array to get the category property form each object, including the all button
-// const displayButtons = () => {
-//   const buttons = ["all", ...new Set(products.map((product) => product.category))];
-//   // console.log(buttons);
-//   categoriesDOM.innerHTML = buttons
-//     .map((category) => {
-//       return `<button class="category-btn h6-light" data-id="${category}">${category}</button>`;
-//     })
-//     .join("");
-// };
-// displayButtons();
+//
 
 //////////////////////////////////////////////////////////////////////////////
 ///// MAKING THE FILTER BUTTONS DISPLAY THE DATA ONCE THEY ARE CLICKED ///////
