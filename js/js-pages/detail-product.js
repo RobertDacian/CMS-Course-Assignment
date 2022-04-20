@@ -1,5 +1,4 @@
 import { message } from "../components/messages.js";
-import { products } from "./products.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -8,46 +7,52 @@ const detailProduct = document.querySelector(".product-hero-flex");
 
 console.log(id);
 
-// If there is no id redirect back to shop page
+const urlDetails = "https://cms-ca-wp.dev-squid.com/wp-json/wc/products/id={id}";
 
-const product = products.find(function (product) {
-  // console.log(typeof product.id);
+console.log(urlDetails);
 
-  if (Number(id) === product.id) {
-    console.log(typeof product.id);
-    return true;
+async function getSingleJackets() {
+  try {
+    const response = await fetch(urlDetails);
+    const data = await response.json();
+
+    console.log(data);
+
+    createHtml(data);
+  } catch (error) {
+    console.log(error);
+    detailProduct.innerHTML = message("error", "An error occurred.", error);
   }
-});
+}
 
-// console.log(product);
+getSingleJackets(urlDetails);
 
-const { category, description, name, price, image, thumbnail } = product;
-
-detailProduct.innerHTML = `<div class="product-wrapper">
-
+function createHtml(product) {
+  detailProduct.innerHTML = `<div class="product-wrapper">
                             <div class="images-wrapper">
                               <div class="product-image">
-                                <img src="${image}" class="img" alt="${name}" />
+                                <img src="${product.src}" class="img" alt="${product.name}" />
                               </div>
                               <div class="thumbnail-image">
-                                <img src="${thumbnail}" class="img-thumbnail" alt="${name}" />
-                                <img src="${thumbnail}" class="img-thumbnail" alt="${name}" />
-                                <img src="${thumbnail}" class="img-thumbnail" alt="${name}" />
-                                <img src="${thumbnail}" class="img-thumbnail" alt="${name}" />
+                                <img src="${product.thumbnail}" class="img-thumbnail" alt="${product.name}" />
+                                <img src="${product.thumbnail}" class="img-thumbnail" alt="${product.name}" />
+                                <img src="${product.thumbnail}" class="img-thumbnail" alt="${product.name}" />
+                                <img src="${product.thumbnail}" class="img-thumbnail" alt="${product.name}" />
                               </div>
                             </div>
 
                             <div class="product-info">
                               <div class="product-info__header">
-                                <h2>${name}</h2>
-                                <h4 class="h4-light">${category}</h4>
-                                <p>${price}</p>
+                                <h2>${product.name}</h2>
+                                <h4 class="h4-light">${product.category}</h4>
+                                <p>${product.price_html}</p>
                               </div>
                               <div class="product-info__main">
-                                <p>${description}</p>
+                                <p>${product.description}</p>
                               </div>
                               <div class="product-info__footer">
                                 <form action="./bag-detail.html" method="get">
                                 <button class="btn">Add to cart</button>
                               </div>
                              </div>`;
+}
