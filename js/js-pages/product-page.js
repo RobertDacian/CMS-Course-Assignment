@@ -11,7 +11,7 @@ import { message } from "../components/messages.js";
 const productsContainer = document.querySelector(".products-container");
 const perPage = document.querySelector(".per-page-selection");
 const categories = document.querySelectorAll(".category-btn");
-const searchButton = document.querySelector(".search-button");
+// const searchButton = document.querySelector(".search-button");
 
 const baseUrl = "https://cms-ca-wp.dev-squid.com/wp-json/wc/store/products";
 
@@ -26,7 +26,7 @@ export async function getProducts(url) {
     console.log(products);
     displayProducts(products);
 
-    // productsContainer.innerHTML = "";
+    productsContainer.innerHTML = "";
   } catch (error) {
     console.log(error);
     productsContainer.innerHTML = message("error", "An error occurred.", error);
@@ -42,31 +42,16 @@ const displayProducts = (productsToDisplay) => {
     return;
   }
 
-  productsContainer.innerHTML = filteredProducts
-    .map((product) => {
-      const { id, name, image, price } = product;
-
-      return `<a <div class="single-product product f-dir-col__center-center"   data-id="${product.id}" href="product.html?id=${product.id}&name=${product.name}" >
+  productsToDisplay.forEach(function (product) {
+    productsContainer.innerHTML += `<a <div class="single-product product f-dir-col__center-center"   data-id="${product.id}" href="product.html?id=${product.id}&name=${product.name}" >
                   <img src="${product.images[0].src}" class="product-img img" alt=""/>
                   <div class="product-footer">
                     <h5 class="product-name h5-light">${product.name}</h5>
                     <p class="product-price">${product.price_html}</p>
                   </div>
                 </div></a>`;
-    })
-    .join("");
+  });
 };
-
-//   productsToDisplay.forEach(function (product) {
-//     productsContainer.innerHTML += `<a <div class="single-product product f-dir-col__center-center"   data-id="${product.id}" href="product.html?id=${product.id}&name=${product.name}" >
-//                   <img src="${product.images[0].src}" class="product-img img" alt=""/>
-//                   <div class="product-footer">
-//                     <h5 class="product-name h5-light">${product.name}</h5>
-//                     <p class="product-price">${product.price_html}</p>
-//                   </div>
-//                 </div></a>`;
-//   });
-// };
 displayProducts();
 
 const form = document.querySelector(".input-form");
