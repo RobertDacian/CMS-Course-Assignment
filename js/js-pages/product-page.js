@@ -16,17 +16,13 @@ const categories = document.querySelectorAll(".category-btn");
 const baseUrl = "https://cms-ca-wp.dev-squid.com/wp-json/wc/store/products";
 
 let products = [];
-let filteredProducts = products;
 
 export async function getProducts(url) {
   try {
     const response = await fetch(url);
     products = await response.json();
 
-    console.log(products);
     displayProducts(products);
-
-    productsContainer.innerHTML = "";
   } catch (error) {
     console.log(error);
     productsContainer.innerHTML = message("error", "An error occurred.", error);
@@ -35,12 +31,14 @@ export async function getProducts(url) {
 getProducts(baseUrl);
 
 const displayProducts = (productsToDisplay) => {
-  if (filteredProducts.length < 1) {
+  if (productsToDisplay.length < 1) {
     productsContainer.innerHTML = `<div class="msg-container">
                                   <p class="error-msg" id="errorMsg">Sorry, no products matched your search</p>
                                   </div>`;
     return;
   }
+
+  productsContainer.innerHTML = "";
 
   productsToDisplay.forEach(function (product) {
     productsContainer.innerHTML += `<a <div class="single-product product f-dir-col__center-center"   data-id="${product.id}" href="product.html?id=${product.id}&name=${product.name}" >
@@ -51,31 +49,83 @@ const displayProducts = (productsToDisplay) => {
                   </div>
                 </div></a>`;
   });
+  displayButtons(productsToDisplay);
 };
-displayProducts();
 
+//////////////////////////////////////////////////////////////////////////////
+////////////////// SETTING UP THE SEARCH INPUT FILTER/////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 const form = document.querySelector(".input-form");
-const searchInput = document.querySelector(".search-input");
+const searchInput = document.querySelector("#search-input");
 
 form.addEventListener("keyup", () => {
-  const inputValue = searchInput.value;
+  const inputValue = searchInput.value.toLowerCase();
   console.log(inputValue);
 
-  filteredProducts = products.filter((product) => {
+  const filteredProducts = products.filter((product) => {
     return product.name.toLowerCase().includes(inputValue);
   });
-  displayProducts();
+  displayProducts(filteredProducts);
 });
 
-// filter code
-// do filtering method then call
+//////////////////////////////////////////////////////////////////////////////
+////////// DISPLAYING THE FILTER BUTTONS FORM ( CATEGORY BUTTONS ) ///////////
+//////////////////////////////////////////////////////////////////////////////
 
-// let products = [];
+const categoriesDOM = document.querySelector(".categories");
 
+// This is the displayButtons function when we iterate over the original products array to get the category property form each object, including the all button
+const displayButtons = () => {
+  const buttons = ["all", ...new Set(products.map((product) => product.categories[0].name))];
+  // console.log(buttons);
+  categoriesDOM.innerHTML = buttons
+    .map((categories) => {
+      return `<button class="category-btn h6-light" data-id="${categories}">${categories}</button>`;
+    })
+    .join("");
+};
+displayButtons();
+
+//////////////////////////////////////////////////////////////////////////////
+///// MAKING THE FILTER BUTTONS DISPLAY THE DATA ONCE THEY ARE CLICKED ///////
+//////////////////////////////////////////////////////////////////////////////
+
+let categoryProducts;
+
+categoriesDOM.addEventListener("click", (e) => {
+  console.log(e.target);
+  const htmlElement = e.target;
+  if (htmlElement.classList.contains("category-btn")) {
+    if (htmlElement.dataset.id === "all") {
+      categoryProducts = products;
+    } else {
+      categoryProducts = products.filter((product) => {
+        return product.categories[0].name === htmlElement.dataset.id;
+      });
+    }
+    searchInput.value = "";
+    displayProducts(categoryProducts);
+  }
+});
+
+//////////////////////////////////////////////////////////////////////////////
+/////////////// ITEMS PER PAGE FILTER WITH API ARGUMENT "PER+PAGE"////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// Items per-page filter
+perPage.onchange = function (event) {
+  const newUrl = baseUrl + `?per_page=${event.target.value}`;
+  productsContainer.innerHTML = "";
+  getProducts(newUrl);
+};
+
+/////////////////////////////////////////////////////
+////////////////// OLD CODE /////////////////////////
+/////////////////////////////////////////////////////
 // export async function getProducts(url) {
 //   try {
 //     const response = await fetch(url);
-//     products = await response.json();
+//     const products = await response.json();
 //     console.log(products);
 
 //     // productsContainer.innerHTML = "";
@@ -97,7 +147,7 @@ form.addEventListener("keyup", () => {
 
 // getProducts(baseUrl);
 
-// // Items per-page filter
+// Items per-page filter
 // perPage.onchange = function (event) {
 //   const newUrl = baseUrl + `?per_page=${event.target.value}`;
 //   productsContainer.innerHTML = "";
