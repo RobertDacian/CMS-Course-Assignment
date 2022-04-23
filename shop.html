@@ -99,19 +99,33 @@
         <div class="container">
           <div class="products">
             <!-- filters -->
-            <div class="filters-container">
-              <form class="input-form">
-                <input type="text" class="search-input" placeholder="Search product..." />
-              </form>
+            <div>
+              <div class="search">
+                <form class="input-form">
+                  <input type="search" id="search-input" placeholder="Search product..." />
+                  <button class="search-button">Search</button>
+                </form>
+              </div>
               <!-- categories -->
               <h4 class="h4-light">categories</h4>
-              <article class="categories">
-                <!-- <button class="category-btn h6-light">All</button>
-                <button class="category-btn h6-light">Man</button>
-                <button class="category-btn h6-light">Woman</button>
-                <button class="category-btn h6-light">Popular</button>
-                <button class="category-btn h6-light">New</button> -->
-              </article>
+              <div class="categories">
+                <button class="category-btn h6-light" id="all" value="all">All</button>
+                <button class="category-btn h6-light" id="man" value="21">Man</button>
+                <button class="category-btn h6-light" id="woman" value="25">Woman</button>
+                <button class="category-btn h6-light" id="popular" value="27">Popular</button>
+                <button class="category-btn h6-light" id="new" value="30">New</button>
+              </div>
+
+              <div class="per-page">
+                <label for=""><h4 class="h4-light">Items per page</h4></label>
+                <select class="per-page-selection">
+                  <option value="3">Three</option>
+                  <option value="6">Six</option>
+                  <option value="9">Nine</option>
+                  <option value="12">Twelve</option>
+                  <option value="15">Fifteen</option>
+                </select>
+              </div>
             </div>
             <!-- filtered products -->
             <div class="products-container">
@@ -120,7 +134,7 @@
 
             <!-- single product -->
 
-            <article class="product f-dir-col__center-center">
+            <article class="product last-product f-dir-col__center-center">
               <div class="product-footer">
                 <h5 class="h5-light product-name"></h5>
                 <p class="product-price"></p>

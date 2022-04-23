@@ -63,6 +63,10 @@ section.hero-banner {
   box-shadow: var(--light-shadow);
 }
 
+.last-product {
+  box-shadow: none;
+}
+
 .product img {
   height: 150px;
   width: 150px;
@@ -87,6 +91,7 @@ section.hero-banner {
 }
 
 .input-form {
+  display: flex;
   padding-bottom: 1em;
 }
 
@@ -122,6 +127,10 @@ section.hero-banner {
 
 .product-name {
   margin-bottom: 0.25rem;
+}
+
+.per-page {
+  padding-top: 1em;
 }
 
 /* ###################################################### */
@@ -170,7 +179,7 @@ section.hero-banner {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1em;
   }
 }
