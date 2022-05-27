@@ -47,7 +47,7 @@ const displayProducts = (productsToDisplay) => {
                     <h5 class="product-name h5-light">${product.name}</h5>
                     <p class="product-price">${product.price_html}</p>
                   </div>
-                </div></a>`;
+                </div>`;
   });
   displayButtons(productsToDisplay);
 };

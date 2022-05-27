@@ -57,3 +57,56 @@ function createHtml(singleProduct) {
                               </div>
                              </div>`;
 }
+
+
+
+/////////////////////////////////SLIDER /////////////////////////////
+
+// let slidePosition = 0;
+// const slides = document.querySelectorAll(".slide-item");
+// const totalSlides = slides.length;
+// console.log(totalSlides);
+
+// document.getElementById("next-btn").addEventListener("click", function () {
+//   console.log("Test next");
+//   moveToNextSlide();
+// });
+
+// document.getElementById("prev-btn").addEventListener("click", function () {
+//   console.log("Test prev");
+//   moveToPreviousSlide();
+// });
+
+// function updateSlidePosition() {
+//   for (let slide of slides) {
+//     slide.classList.remove("slide-visible");
+//     slide.classList.add("slide--hidden");
+//   }
+
+//   slides[slidePosition].classList.add("slide-visible");
+// }
+
+// function moveToNextSlide() {
+//   console.log("Hello next function");
+
+//   if (slidePosition === totalSlides - 1) {
+//     slidePosition = 0;
+//   } else {
+//     slidePosition++;
+//   }
+
+//   updateSlidePosition();
+// }
+
+// function moveToPreviousSlide() {
+//   console.log("Hello previous function");
+
+//   if (slidePosition === 0) {
+//     slidePosition = totalSlides - 1;
+//   } else {
+//     slidePosition--;
+//   }
+
+//   updateSlidePosition(totalSlides);
+// }
+
