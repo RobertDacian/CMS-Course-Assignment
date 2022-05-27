@@ -1,2 +1,2 @@
 # Raniy-Days-static-website-with-JS
-Static e-commerce website for Rainy Days with JavaScript functionalities. With API calls
+Rainy Days Website it's a E-commerce websitewith JavaScript functionalities, and API calls.
