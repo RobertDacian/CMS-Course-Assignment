@@ -28,7 +28,7 @@ Tools and techniques used in the project:
 
 **Project Links**
 
-- [See on GitHub](git@github.com:RobertDacian/Rainy-Days-Website.git)
+- [See on GitHub](https://github.com/RobertDacian/Rainy-Days-Website.git)
 
 - [Live Version ](https://rainy-days-project.netlify.app/)
 
